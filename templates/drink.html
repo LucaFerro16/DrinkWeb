@@ -6,15 +6,16 @@
     <title>{{ drink_name }}</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
-<h1 class="drink-title">{{ drink_name }}</h1>
+<body class="page-background">
+    <h1 class="drink-title">{{ drink_name }}</h1>
     <img src="{{ image_filename }}" alt="{{ drink_name }}" style="width: 90%; max-width: 300px; height: auto;">
     <p><strong>Gradazione:</strong> {{ drink_info['GRADAZIONE'] }}</p>
     <p><strong>Bicchiere consigliato:</strong> {{ drink_info['BICCHIERE'] }}</p>
-    
+
     <h2>Ingredienti:</h2>
     <div class="ingredienti-lista">
         {% for ingrediente in ingredienti %}
-            <p>{{ ingrediente }}</p>
+        <p>{{ ingrediente }}</p>
         {% endfor %}
     </div>
 
