@@ -1,0 +1,135 @@
+/* Impostazioni globali */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Sfondo della pagina iniziale */
+.home-background {
+    background: url("/static/images/sfondo.jpg") no-repeat center center fixed;
+    background-size: contain; /* 🔹 Ridimensiona l'immagine senza tagliarla */
+    background-attachment: fixed;
+    color: white !important; /* Testo bianco per contrasto */
+}
+
+/* Sfondo per le pagine successive */
+.page-background {
+    background-color: #87CEEB;
+    color: #333; /* Testo scuro per leggibilità */
+}
+
+/* Stile del titolo principale */
+h1.title {
+    font-family: "Brush Script MT", cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black !important; /* 🔹 Forza il colore nero */
+    background: none; /* 🔹 Assicura che non ci sia sfondo */
+    padding: 0; /* 🔹 Rimuove eventuale spazio extra */
+    text-shadow: none; /* 🔹 Evita effetti di ombra */
+    position: relative;
+    z-index: 1000;
+}
+
+/* Stile per la lista degli ingredienti senza puntini */
+.ingredienti-lista p {
+    margin: 5px 0; /* Spaziatura tra gli ingredienti */
+    font-size: 18px;
+}
+
+
+
+/* Contenitore della selezione */
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Spazio tra gli elementi */
+    margin-top: 20px;
+}
+
+/* Stile della tendina */
+select {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    width: 90%;
+    max-width: 400px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+/* Stile del pulsante di conferma */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Stile del pulsante di ritorno (←) */
+.back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.back-button:hover {
+    color: #000;
+}
+
+/* Stile delle immagini */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drink-image {
+    max-width: 300px; /* Dimensione massima */
+    height: auto; /* Mantiene le proporzioni */
+    display: block; /* Evita problemi di layout */
+    margin: 20px auto; /* Centra l'immagine */
+    border-radius: 10px; /* Opzionale: arrotonda gli angoli */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opzionale: aggiunge un'ombra */
+}
+
+/* Font per il nome del drink nella schermata di dettagli */
+h1.drink-title {
+    font-family: "Arial Narrow", sans-serif; /* Cambia con il font che preferisci */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
