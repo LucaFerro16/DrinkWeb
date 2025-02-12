@@ -78,8 +78,8 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 6px 14px;
+    font-size: 13px;
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease-in-out;
