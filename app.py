@@ -6,7 +6,11 @@ from fastapi.responses import RedirectResponse
 import pandas as pd
 from urllib.parse import unquote
 import os
+import uvicorn
 
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Usa la porta di Render se disponibile
+    uvicorn.run(app, host="0.0.0.0", port=port)
 
 
 # Creazione app e configurazione di base
